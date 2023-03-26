@@ -1,0 +1,120 @@
+.mainWrap {
+  width: 65rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  
+}
+
+.boxLef {
+  display: flex;
+  flex: 1 1 25%;
+  height: 100%;
+  background-color: hsl(235, 46%, 20%);
+  border-radius: 20px;
+}
+
+.boxLef > :nth-child(1) {
+  padding: 4rem 3rem 4rem 3rem;
+  border-radius: 20px;
+  justify-content: flex-start;
+  gap: 1rem;
+  background-color: hsl(246, 80%, 60%);
+  font-weight: 300;
+  font-size: 2rem;
+}
+
+.boxLef > :nth-child(2) {
+  color: hsl(235, 45%, 61%);
+  border-radius: 20px;
+  font-weight: 300;
+  font-size: 1rem;
+  padding: 1rem 3rem 1rem 3rem;
+}
+
+.boxLef > :nth-child(2) > ul > li {
+  margin: 0.5rem;
+  list-style: none;
+}
+
+.boxLef > :nth-child(2) > ul > li > button {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+}
+
+.boxLef > :nth-child(2) > ul > li > button:hover  {
+  color: white !important;
+  cursor: pointer;
+  border: none;
+}
+
+#report {
+  font-size: 0.75rem;
+  opacity: 0.7;
+}
+
+.boxLef > :nth-child(1) > :nth-child(1) {
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  background-image: url(../../../images/image-jeremy.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.boxRig {
+  display: grid;
+  flex: 1 1 75%;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.gridBox {
+  height: 14.5rem;
+  background-repeat: no-repeat;
+  background-position: top right;
+  border-radius: 20px;
+  font-weight: 300;
+  font-size: 1rem;
+  position: relative;
+}
+
+.gridBox > :nth-child(1) {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  z-index: 1000;
+  background-color: hsl(235, 46%, 20%);
+  border-radius: 16px;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  padding: 1.8rem;
+}
+
+.gridBox > :nth-child(1) > :nth-child(1) {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.gridBox > :nth-child(1) > :nth-child(1) > img {
+  height: 0.5rem;
+}
+
+.gridBox > :nth-child(1) > :nth-child(2) {
+  padding-top: 1.5rem;
+  font-size: 3rem;
+}
+
+.gridBox > :nth-child(1) > :nth-child(3) {
+  font-size: 1rem;
+  margin-top: 0.5rem;
+  color: hsl(236, 100%, 87%);
+}
